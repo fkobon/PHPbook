@@ -1,0 +1,10 @@
+<?php
+class A {
+public static $static_item = ‘hello’;
+public static function hello() {
+echo ‘hello_function’;
+}
+}
+echo A::$static_item; // âûâåäåò hello, õîòÿ îáúåêòû êëàññà A íå ñîçäàâàëèñü.
+A::hello(); // âûâåäåò hello_function
+?>
